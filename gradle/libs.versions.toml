@@ -20,6 +20,7 @@ kotlinxDateTime = "0.6.2"
 coroutines = "1.10.2"
 composeMarkdown = "0.5.7"
 secretGradlePlugin = "2.0.1"
+mutton = "1.3.0"
 
 [libraries]
 androidxCoreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -57,6 +58,11 @@ androidxLifecycleViewmodelNavigation3 = { module = "androidx.lifecycle:lifecycle
 # test
 coroutinesTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
 kotlinTest = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+
+# AutoMuttonRecipe
+autoMuttonRecipe = { group = "io.github.ryunen344.mutton", name = "auto-mutton-recipe", version.ref = "mutton" }
+autoMuttonRecipeCompose = { group = "io.github.ryunen344.mutton", name = "auto-mutton-recipe-compose", version.ref = "mutton" }
+autoMuttonRecipeSavedState = { group = "io.github.ryunen344.mutton", name = "auto-mutton-recipe-savedstate", version.ref = "mutton" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

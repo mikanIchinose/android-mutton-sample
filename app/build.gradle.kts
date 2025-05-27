@@ -80,4 +80,9 @@ dependencies {
     // test
     testImplementation(libs.coroutinesTest)
     testImplementation(libs.kotlinTest)
+
+    // AutoMuttonRecipe
+    implementation(libs.autoMuttonRecipe)
+    implementation(libs.autoMuttonRecipeCompose)
+    implementation(libs.autoMuttonRecipeSavedState)
 }
