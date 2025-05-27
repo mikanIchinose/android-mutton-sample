@@ -1,0 +1,72 @@
+[versions]
+agp = "8.10.0"
+kotlin = "2.1.21"
+ksp = "2.1.21-2.0.1"
+coreKtx = "1.16.0"
+hilt = "2.56.2"
+hiltNavigationCompose = "1.2.0"
+navigation3 = "1.0.0-alpha02"
+navigation3Lifecycle = "1.0.0-SNAPSHOT"
+navigation3Material = "1.0.0-SNAPSHOT"
+material3 = "1.4.0-alpha15"
+lifecycle = "2.9.0"
+activityCompose = "1.10.1"
+composeBom = "2025.05.01"
+openApiGenerator = "7.13.0"
+ktor = "3.1.3"
+coil = "3.2.0"
+kotlinxSerialization = "1.8.1"
+kotlinxDateTime = "0.6.2"
+coroutines = "1.10.2"
+composeMarkdown = "0.5.7"
+secretGradlePlugin = "2.0.1"
+
+[libraries]
+androidxCoreKtx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidxLifecycleRuntimeKtx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycle" }
+androidxLifecycleViewModelCompose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycle" }
+androidxActivityCompose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidxComposeBom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidxUi = { group = "androidx.compose.ui", name = "ui" }
+androidxUiGraphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidxUiTooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidxUiToolingPreview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidxUiTestManifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidxMaterial3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3" }
+androidxMaterialIconsCore = { group = "androidx.compose.material", name = "material-icons-core" }
+composeMarkdown = { group = "com.github.jeziellago", name = "compose-markdown", version.ref = "composeMarkdown" }
+ktorClientCore = { group = "io.ktor", name = "ktor-client-core", version.ref = "ktor" }
+kotlinxSerializationJson = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+kotlinxDateTime = { group = "org.jetbrains.kotlinx", name = "kotlinx-datetime", version.ref = "kotlinxDateTime" }
+
+# di
+hiltAndroid = { group = "com.google.dagger", name = "hilt-android", version.ref = "hilt" }
+hiltCompiler = { group = "com.google.dagger", name = "hilt-compiler", version.ref = "hilt" }
+
+# image
+coilCompose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
+coilNetworkOkhttp = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
+
+# navigation
+hiltNavigationCompose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "hiltNavigationCompose" }
+androidxNavigation3Runtime = { module = "androidx.navigation3:navigation3-runtime", version.ref = "navigation3" }
+androidxNavigation3Ui = { module = "androidx.navigation3:navigation3-ui", version.ref = "navigation3" }
+androidxMaterial3Navigation3 = { group = "androidx.compose.material3.adaptive", name = "adaptive-navigation3", version.ref = "navigation3Material" }
+androidxLifecycleViewmodelNavigation3 = { module = "androidx.lifecycle:lifecycle-viewmodel-navigation3", version.ref = "navigation3Lifecycle" }
+
+# test
+coroutinesTest = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlinTest = { group = "org.jetbrains.kotlin", name = "kotlin-test", version.ref = "kotlin" }
+
+[plugins]
+androidApplication = { id = "com.android.application", version.ref = "agp" }
+kotlinAndroid = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlinCompose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+openApiGenerator = { id = "org.openapi.generator", version.ref = "openApiGenerator" }
+android-library = { id = "com.android.library", version.ref = "agp" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+hilt = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
+kotlinSerialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+secretGradlePlugin = { id = "com.google.android.libraries.mapsplatform.secrets-gradle-plugin", version.ref = "secretGradlePlugin" }
+kotlinMultiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlin" }
+androidKotlinMultiplatformLibrary = { id = "com.android.kotlin.multiplatform.library", version.ref = "agp" }
